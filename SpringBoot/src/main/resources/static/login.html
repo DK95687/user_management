@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+<main class="auth-card">
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Login to your account</p>
+
+    <form id="loginForm">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"
+               autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"
+               maxlength="72" autocomplete="current-password" required>
+
+        <button id="loginButton" type="submit">Login</button>
+        <p id="loginMessage" class="message"
+           role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="switch-link">
+        New user? <a href="/register.html">Register here</a>
+    </p>
+    <p class="switch-link"><a href="/">Home</a></p>
+</main>
+</body>
+</html>

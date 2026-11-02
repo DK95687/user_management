@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+<main class="auth-card">
+    <h1>Create Account</h1>
+    <p class="subtitle">Register your details</p>
+
+    <form id="registerForm">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text"
+               maxlength="100" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"
+               maxlength="150" autocomplete="email" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"
+               minlength="8" maxlength="72"
+               autocomplete="new-password" required>
+
+        <button id="registerButton" type="submit">Register</button>
+        <p id="registerMessage" class="message"
+           role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="switch-link">
+        Already registered? <a href="/login.html">Login here</a>
+    </p>
+    <p class="switch-link"><a href="/">Home</a></p>
+</main>
+</body>
+</html>
